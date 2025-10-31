@@ -6,6 +6,7 @@ import React from "react";
 // import p5 from "../../assets/images/p5.jpg";
 // import solat from "../../assets/images/solat.jpg";
 import flyerPpdb from "../../assets/ppdb2025/flyerppdb.jfif";
+import spmb from "../../assets/spmb2026/spmb.jpeg"
 
 import { IoNewspaper } from "react-icons/io5";
 import { RiGraduationCapFill } from "react-icons/ri";
@@ -15,57 +16,15 @@ import { MdApartment } from "react-icons/md";
 const PpdbLanding = () => {
   return (
     <div>
-      <div className="px-5 md:px-7 lgpx-20 mt-10 flex justify-center flex-wrap lg:flex-nowrap pb-10 gap-10">
+      <div className="px-5 md:px-7 lgpx-20 mt-10 flex justify-center items-center flex-wrap lg:flex-nowrap pb-10 gap-10">
         <div className="carousel mt-10 lg:mt-0 md:flex rounded-box h-60 lg:h-auto md:w-[70vw] lg:w-80 relative">
           <div className="carousel-item w-full">
             <img
-              src={flyerPpdb}
+              src={spmb}
               className="w-full object-cover"
               alt="Tailwind CSS Carousel component"
             />
           </div>
-          {/* <div className="carousel-item w-full">
-            <img
-              src={paskibra}
-              className="w-full object-cover"
-              alt="Paskibra"
-            />
-          </div>
-          <div className="carousel-item w-full">
-            <img
-              src="https://lh3.googleusercontent.com/p/AF1QipOZ5PgrKpIsvQBRizOacm_diMV5Bfzp5fm4KUvD=s680-w680-h510"
-              className="w-full object-cover"
-              alt="Tailwind CSS Carousel component"
-            />
-          </div>
-          <div className="carousel-item w-full">
-            <img
-              src={guru}
-              className="w-full object-cover"
-              alt="Tailwind CSS Carousel component"
-            />
-          </div>
-          <div className="carousel-item w-full">
-            <img
-              src={mabar}
-              className="w-full object-cover"
-              alt="Tailwind CSS Carousel component"
-            />
-          </div>
-          <div className="carousel-item w-full">
-            <img
-              src={p5}
-              className="w-full object-cover"
-              alt="Tailwind CSS Carousel component"
-            />
-          </div>
-          <div className="carousel-item w-full">
-            <img
-              src={solat}
-              className="w-full object-cover"
-              alt="Tailwind CSS Carousel component"
-            />
-          </div> */}
         </div>
         <div>
           <h2 className="font-semibold">
@@ -74,11 +33,11 @@ const PpdbLanding = () => {
           <h1 className="text-2xl font-bold text-indigo-500">Resmi Dibuka</h1>
 
           <p>
-            PPDB (Penerimaan Peserta didik Baru){" "}
+            SPMB (Sistem Penerimaan Murid Baru){" "}
             <span className="font-semibold">
               SMP IT AL BANNA BOARDING SCHOOL
             </span>{" "}
-            Tahun Ajaran 2025/2026!
+            Tahun Ajaran 2026/2027!
           </p>
           <p className="mt-4">
             Jangan lewatkan kesempatan ini! Kami menawarkan tiga jalur
@@ -110,7 +69,7 @@ const PpdbLanding = () => {
           </h3>
           <div className="mt-5 flex justify-start">
             <a
-              href="https://www.smpitalbanna.sch.id/informasi-ppdb"
+              href="https://wa.me/+6282350333377"
               className="w-80 text-center bg-gradient-to-t from-indigo-400 to-blue-300 font-semibold text-white rounded-3xl shadow-2xl shadow-indigo-400 drop-shadow-lg hover:scale-110 ease-in-out duration-200 py-2"
             >
               Informasi Lebih Lanjut

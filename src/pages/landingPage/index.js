@@ -20,6 +20,7 @@ import guru from "../../assets/images/guru.jpg";
 import mabar from "../../assets/images/mabar.jpg";
 import p5 from "../../assets/images/p5.jpg";
 import solat from "../../assets/images/solat.jpg";
+import spmb from "../../assets/spmb2026/spmb.jpeg"
 
 import { FaMailBulk } from "react-icons/fa";
 import { FaPhoneVolume } from "react-icons/fa6";
@@ -53,16 +54,19 @@ function LandingPage() {
             Pemimpin Kejayaan <br />
             <span className="text-emerald-300 text-center">Islam</span>
           </h2>
-          <p className="text-left">
-            Kami adalah sekolah islam terpadu yang bertujuan mencetak generasi
-            <br />
-            Qur'ani yang perduli terhadap agama, keluarga, nusa dan bangsa.
-          </p>
+            <div className="bg-white/10 rounded-md p-2 backdrop-blur-lg text-gray-800 border border-white/20 shadow-lg">
+              <p className="text-left">
+                Kami adalah sekolah islam terpadu yang bertujuan mencetak generasi
+                <br />
+                Qur'ani yang perduli terhadap agama, keluarga, nusa dan bangsa.
+              </p>
+
+            </div>
 
           <div className="mt-5 flex justify-start items-center gap-10">
-            <Link 
-            to="https://docs.google.com/forms/d/1UzRNeDQHZtOB5qWcgELYEK_8fmMjeJgax3u-SLChhXo/viewform?edit_requested=true"
-            className="bg-gradient-to-t from-indigo-400 to-blue-300 px-4 py-2 font-semibold text-white rounded-3xl shadow-2xl shadow-indigo-400 drop-shadow-lg hover:scale-110 ease-in-out duration-200">
+            <Link
+              to="/spmb"
+              className="bg-gradient-to-t from-indigo-400 to-blue-300 px-4 py-2 font-semibold text-white rounded-3xl shadow-2xl shadow-indigo-400 drop-shadow-lg hover:scale-110 ease-in-out duration-200">
               Daftar!
             </Link>
             <p className="text-sm">
@@ -110,7 +114,7 @@ function LandingPage() {
         <div className="relative">
           <div className="bg-white px-2 py-1 rounded-md drop-shadow-lg shadow-2xl absolute top-10 flex justify-center md:top-20 md:-right-20 z-20 hover:opacity-20 ease-in-out duration-300 cursor-pointer">
             <IoPersonCircleSharp size={24} color="purple" />
-            <p>1.278 Alumni</p>
+            <p>300 Alumni</p>
           </div>
 
           <div className="bg-white px-2 py-1 rounded-md drop-shadow-lg shadow-2xl absolute gap-3 flex justify-center items-center bottom-5 right-0 md:right-auto md:-left-20 lg:-left-40 z-20 hover:opacity-20 ease-in-out duration-300 cursor-pointer">
@@ -121,6 +125,13 @@ function LandingPage() {
             </p>
           </div>
           <div className="carousel mt-10 lg:mt-0 md:flex rounded-box h-60 lg:h-auto md:w-[70vw] lg:w-80 relative">
+            <div className="carousel-item w-full">
+              <img
+                src={spmb}
+                className="w-full object-cover"
+                alt="Tailwind CSS Carousel component"
+              />
+            </div>
             <div className="carousel-item w-full">
               <img
                 src="https://lh3.googleusercontent.com/p/AF1QipOblXCcIiVRB79DrK5xIto1ZYylhiaQqVBX6nQk=s1360-w1360-h1020"
@@ -175,17 +186,6 @@ function LandingPage() {
       </main>
 
       <Logo />
-      <div className="mt-20">
-        <h2 className="text-3xl font-bold text-center mb-10">Event Observasi Sedang Berlangsung</h2>
-        <div className="mt-5 hover:scale-110 ease-in-out duration-200 relative">
-              <Link
-                to="/login"
-                className="absolute centering bg-gradient-to-t from-indigo-400 to-blue-300 px-4 font-semibold text-white rounded-xl shadow-2xl shadow-indigo-400 drop-shadow-lg py-2 mt-10"
-              >
-                Login
-              </Link>
-            </div>
-      </div>
 
       {/* Program Unggulan */}
 
@@ -298,8 +298,8 @@ function LandingPage() {
           Sudah siap sekolah?
         </h2>
         <Link
-        to="https://docs.google.com/forms/d/1UzRNeDQHZtOB5qWcgELYEK_8fmMjeJgax3u-SLChhXo/viewform?edit_requested=true"
-        className="bg-gradient-to-t from-indigo-400 to-blue-300 px-4 font-semibold text-white rounded-3xl shadow-2xl shadow-indigo-400 drop-shadow-lg hover:scale-110 ease-in-out duration-200 py-2">
+          to="/spmb"
+          className="bg-gradient-to-t from-indigo-400 to-blue-300 px-4 font-semibold text-white rounded-3xl shadow-2xl shadow-indigo-400 drop-shadow-lg hover:scale-110 ease-in-out duration-200 py-2">
           Daftar!
         </Link>
       </div>

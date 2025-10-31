@@ -11,7 +11,7 @@ import { FaFacebookF, FaInstagramSquare, FaTiktok } from "react-icons/fa";
 const Footer = () => {
   return (
     <footer className="bg-base text-black">
-      <div className="flex flex-wrap gap-5 justify-evenly bg-base text-base-content p-10">
+      <div className="flex flex-wrap gap-5 justify-evenly bg-base text-base-content p-5">
         <nav className="flex flex-wrap justify-center items-center gap-2">
           <img src={logoSekolah} alt="smpit-albanna-logo" className="w-32" />
           <p className="text-nowrap lg:text-wrap text-center">
@@ -48,7 +48,7 @@ const Footer = () => {
         </nav>
       </div>
 
-      <div className="pb-5 flex flex-wrap gap-5 justify-evenly text-slate-500">
+      <div className="pb-5 flex flex-col md:flex-row flex-wrap gap-10 items-center justify-center text-slate-500">
         <div className="flex justify-start items-center gap-3 text-sm">
           <FaPhoneVolume />
           <p className="font-bold">(+62) 823-5033-3377</p>

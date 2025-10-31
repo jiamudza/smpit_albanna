@@ -12,7 +12,8 @@ import Blog from "./pages/blog"
 import TestAuth from "./pages/login_Test";
 import UserValidation from "./pages/user-validation";
 import Pengumuman from "./pages/pengumuman-PPDB";
-import PenerimaanSiswaBaru from "./pages/spmb/page";
+// import PenerimaanSiswaBaru from "./pages/spmb/page";
+import RegistForm from "./pages/spmb/page";
 
 function App() {
   return (
@@ -28,7 +29,7 @@ function App() {
         <Route path="/login" element={<TestAuth/>}/>
         <Route path="/user-validation" element={<UserValidation/>}/>
         <Route path="/pengumuman" element={<Pengumuman/>}/>
-        <Route path="spmb" element={<PenerimaanSiswaBaru />}/>
+        <Route path="/spmb" element={<RegistForm />}/>
         <Route path="*" element={<NotFound/>}/>
       </Routes>
     </BrowserRouter>

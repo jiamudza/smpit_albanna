@@ -25,13 +25,14 @@ module.exports = {
         title: "#0B132A",
         text: "#4F5665",
         pale: "#EFEEEE",
-        xpale: "#BABABA"
+        xpale: "#BABABA",
+        input: "#E5E7EB",
+        input2: "#d8b4fe"
       },
     },
   },
   daisyui: {
     themes: false,
   },
-  plugins: [require("daisyui")],
-  darkMode: false
+  plugins: [require("daisyui")]
 };

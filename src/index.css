@@ -15,6 +15,43 @@ code {
 @tailwind components;
 @tailwind utilities;
 
+@layer base {
+  /* Hilangkan panah number di Chrome, Safari, Edge */
+  input[type=number]::-webkit-inner-spin-button,
+  input[type=number]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+  }
+  
+  input[type="date"]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  display: none;
+}
+
+/* input[type="date"] {
+  -moz-appearance: textfield;
+} */
+
+input[type="date"]::-webkit-calendar-picker-indicator {
+  display: block;
+  cursor: pointer;
+  background-color: orange;
+  color: orange !important;
+  border-radius: 100%;
+  width: 15px;
+  height: 15px;
+}
+}
+
+input, select {
+  background-color: white;
+}
+
+.radio {
+  @apply bg-white w-4 h-4 checked:bg-purple-500 checked:border-purple-500;
+
+  box-shadow: 0 0 0 2px oklch(1 0 0) inset, 0 0 0 2px var(--fallback-b1, oklch(var(--b1) / 1)) inset !important;
+}
 .shadow-primary {
   box-shadow: 11px 12px 28px 2px rgba(0,0,0,0.75);
 -webkit-box-shadow: 11px 12px 28px 2px rgba(0,0,0,0.75);
