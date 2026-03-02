@@ -1,7 +1,7 @@
 import React, { useEffect } from "react";
 
 import logo from "../../assets/logo/smpalbanna.png";
-import { Link } from "react-router-dom";
+// import { Link } from "react-router-dom";
 import axios from "axios";
 import { useState } from "react";
 import { Eye, EyeOff } from "lucide-react";

@@ -5,7 +5,7 @@ import React from "react";
 // import mabar from "../../assets/images/mabar.jpg";
 // import p5 from "../../assets/images/p5.jpg";
 // import solat from "../../assets/images/solat.jpg";
-import flyerPpdb from "../../assets/ppdb2025/flyerppdb.jfif";
+// import flyerPpdb from "../../assets/ppdb2025/flyerppdb.jfif";
 import spmb from "../../assets/spmb2026/spmb.jpeg"
 
 import { IoNewspaper } from "react-icons/io5";

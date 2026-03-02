@@ -38,7 +38,7 @@ const UserValidation = () => {
       });
   }, []);
 
-  console.log(user)
+  console.log(message)
   return (
     <div className="w-full h-full">
       <main className="flex flex-col md:flex-row h-[100vh]">
