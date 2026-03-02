@@ -4,8 +4,10 @@ import React, { useState, useEffect } from 'react'
 import Logo from '../../components/logos';
 import formulir from '../../assets/images/formulir.png'
 import { MdInfo } from 'react-icons/md';
+import { useNavigate } from 'react-router-dom';
 
 const RegistForm = () => {
+    const navigate = useNavigate();
     useEffect(() => {
         const saved = localStorage.getItem("formData");
         if (saved) {
@@ -143,6 +145,8 @@ const RegistForm = () => {
 
             setSuccess(true);
             localStorage.removeItem("formData")
+            navigate('https://chat.whatsapp.com/L4OV6zYCRUG3GhdSi1E37r?mode=gi_t');
+            
         } catch (err) {
             console.error('Error POST:', err.response?.data || err.message);
             alert('Gagal Dalam Mengirim Data.');
@@ -396,7 +400,7 @@ const RegistForm = () => {
                 <Logo />
                 <div className='flex justify-center items-center gap-3 py-5 font-semibold'>
                     <p>Sudah pernah mendaftar?</p>
-                    <a href='https://wa.me/+6285727994765' className='text-white bg-purple-600 rounded-full p-2 text-xs font-semibold hover:bg-purple-300'>Konfirmasi</a>
+                    <a href='https://chat.whatsapp.com/L4OV6zYCRUG3GhdSi1E37r?mode=gi_t' className='text-white bg-purple-600 rounded-full p-2 text-xs font-semibold hover:bg-purple-300'>Konfirmasi</a>
                 </div>
                 <form onSubmit={handleSubmit} className='flex flex-col lg:flex-row gap-3 py-2'>
                     {/* SEPARATE */}
