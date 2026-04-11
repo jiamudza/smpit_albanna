@@ -535,12 +535,12 @@ const RegistForm = () => {
                                             id='reguler' className='mr-1 radio' />
                                         <label htmlFor="reguler" className='text-xs'>Reguler</label>
                                     </div>
-                                    <div className='flex items-center gap-1'>
+                                    {/* <div className='flex items-center gap-1'>
                                         <input type="radio" name='pilihan_program'
                                             value="Prestasi" onChange={handleChange} checked={registData.pilihan_program === "Prestasi"}
                                             id='unggulan' className='mr-1 radio' />
                                         <label htmlFor="prestasi" className='text-xs'>Prestasi</label>
-                                    </div>
+                                    </div> */}
                                     <div className='flex items-center gap-1'>
                                         <input type="radio" name='pilihan_program' id='boarding'
                                             value="Boarding" onChange={handleChange} checked={registData.pilihan_program === "Boarding"}
