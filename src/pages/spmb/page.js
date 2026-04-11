@@ -797,11 +797,11 @@ const RegistForm = () => {
                             <h3 className='font-bold'>Reguler</h3>
                             <p>Program Reguler adalah program untuk pendaftar umum</p>
                         </div>
-                        <div className='mb-4'>
+                        {/* <div className='mb-4'>
                             <h3 className='font-bold'>Prestasi</h3>
                             <p className=''>Program Prestasi adalah program pendaftar diperuntukan bagi siswa yang memiliki prestasi non akademik dan tahfidz dengan melampirkan sertifikat bukti prestasi (piagam, sertifikat, dll).</p>
                             <p className='text-sm mt-2 text-white rounded-full p-2 bg-purple-700 font-semibold'>*Bagi pendaftar yang lulus dan diterima jalur prestasi, maka tidak dikenakan biaya bangunan.</p>
-                        </div>
+                        </div> */}
                         <div className='mb-4'>
                             <h3 className='font-bold'>Boarding</h3>
                             <p className=''>Program Boarding diperuntukkan bagi pendaftar yang ingin tinggal di asrama. dengan beberapa program boarding yaitu:
